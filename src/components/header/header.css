@@ -1,5 +1,5 @@
 header{
-    height: 100vh;
+    height: 110vh;
     padding-top: 7rem;
     overflow: hidden;
 }
@@ -27,6 +27,7 @@ header{
     position: absolute;
     left: 0;
     bottom: 3rem;
+
 }
 
 .header__socials::after{
@@ -34,6 +35,7 @@ header{
     width: 1px;
     height: 2rem;
     background: var(--color-primary);
+    
 }
 
 /* Image ME */
@@ -58,3 +60,27 @@ header{
     font-weight: 300;
     font-size: 0.9rem;
 }
+
+/* Media query for medium devices */
+@media screen and(max-width: 1024px) {
+    header{
+        background: red;
+        height: 68vh;
+    }
+}
+
+/* Media query for small devices */
+@media screen and(min-width: 600px) {
+    header{
+        height: 100vh;
+    }
+    
+    .header__socials{
+        display: none;
+    }
+
+    .scroll__down{
+        display: block;
+    }
+}
+

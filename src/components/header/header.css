@@ -62,25 +62,20 @@ header{
 }
 
 /* Media query for medium devices */
-@media screen and(max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     header{
-        background: red;
         height: 68vh;
     }
 }
 
 /* Media query for small devices */
-@media screen and(min-width: 600px) {
+@media screen and (max-width: 600px) {
     header{
         height: 100vh;
     }
     
-    .header__socials{
+    .header__socials, .scroll__down{
         display: none;
-    }
-
-    .scroll__down{
-        display: block;
     }
 }
 
